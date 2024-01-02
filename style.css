@@ -1,0 +1,122 @@
+body
+{   
+    /* background: rgb(172, 231, 11); */
+    font-family: sans-serif;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.new-task-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.new-task-container input
+{
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+.new-task-container #new_task
+{
+    width: 20em;
+}
+
+.new-task-container #new_task:focus
+{
+    background: rgb(172, 231, 11);
+}
+
+#add_task_btn
+{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#add_task_btn:active
+{
+    border-radius: 0 1em;
+    background-color: black;
+    border: none;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.tasks-list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.task
+{
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: black;
+}
+
+#tasks
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.content .text 
+{
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 1em;
+    background: transparent;
+    box-shadow: inset;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+
+.content .text:not(:read-only)
+{
+    color: rgb(172, 231, 11);
+}
+
+.actions button
+{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: white;
+    padding: 1em;
+}
+
+.actions button:active
+{
+    border-radius: 0 1em;
+    background-color: rgba(255, 255, 255, 0.372);
+    border: none;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.849);
+}
